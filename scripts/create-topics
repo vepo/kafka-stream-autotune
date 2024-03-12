@@ -1,0 +1,5 @@
+#!/bin/bash
+
+docker exec kafka-0 /kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic speed
+docker exec kafka-0 /kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic flow
+docker exec kafka-0 /kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic observation
